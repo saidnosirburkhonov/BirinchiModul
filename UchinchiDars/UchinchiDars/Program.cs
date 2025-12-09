@@ -599,8 +599,8 @@ internal class Program
         //}
 
         //1.3.2.7
-
-
+        //var str = "salom dunyo salom salom";
+        //Console.WriteLine(str.LastIndexOf("salom"));
 
 
 

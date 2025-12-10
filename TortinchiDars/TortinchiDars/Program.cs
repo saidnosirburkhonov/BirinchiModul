@@ -678,7 +678,7 @@ internal class Program
     //static int CountOfOK(string text)
     //{
     //    var count = 0;
-    //    foreach(char i in text)
+    //    for(var i = 0; i < text.Length - 1; i++)
     //    {
     //        if (i == 'o' && i+1 == 'k')
     //        {

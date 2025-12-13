@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BeshinchiDars
 {
@@ -43,9 +42,9 @@ namespace BeshinchiDars
         static void JuftCopy(List<int> numa)
         {
             List<int> numb = new List<int>();
-            for(var i = 0; i < numa.Count; i++)
+            for (var i = 0; i < numa.Count; i++)
             {
-                if(numa[i] % 2 == 0)
+                if (numa[i] % 2 == 0)
                 {
                     numb.Add(numa[i]);
                 }
@@ -54,10 +53,10 @@ namespace BeshinchiDars
         }
 
         //1.5.1.33
-        static void ThirdList(List<int> num1,  List<int> num2)
+        static void ThirdList(List<int> num1, List<int> num2)
         {
             List<int> num3 = new List<int>();
-            for(int i = 0; i < num1.Count - 1; i++)
+            for (int i = 0; i < num1.Count - 1; i++)
             {
                 var res = Math.Max(num1[i], num2[i]);
                 num3.Add(res);
@@ -68,11 +67,11 @@ namespace BeshinchiDars
         //1.5.1.32
         static void JuftIndeks(List<int> nums)
         {
-            
+
             List<int> son = new List<int>();
-            for(var i = 1; i < nums.Count; i++)
+            for (var i = 1; i < nums.Count; i++)
             {
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     son.Add(nums[i]);
                 }
@@ -97,19 +96,19 @@ namespace BeshinchiDars
             Console.WriteLine(string.Join(" ", nums));
         }
 
-            //1.5.1.30
-            static void Juftson(List<int> nums)
+        //1.5.1.30
+        static void Juftson(List<int> nums)
         {
-            for(var i = 0; i < nums.Count -2; i++)
+            for (var i = 0; i < nums.Count - 2; i++)
             {
-                    if (nums[i] % 2 == 0 && nums[i+1] % 2 == 0)
-                    {
-                        nums[i] += nums[i+1];
-                    }
-                    else
-                    {
-                        nums[i] = nums[i];
-                    }
+                if (nums[i] % 2 == 0 && nums[i + 1] % 2 == 0)
+                {
+                    nums[i] += nums[i + 1];
+                }
+                else
+                {
+                    nums[i] = nums[i];
+                }
             }
             Console.WriteLine(string.Join(" ", nums));
         }
@@ -127,7 +126,7 @@ namespace BeshinchiDars
                         str += j;
                     }
                 }
-                
+
             }
             return str;
         }

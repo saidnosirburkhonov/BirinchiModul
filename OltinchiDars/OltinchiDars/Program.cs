@@ -81,14 +81,15 @@ internal class Program
     //1.6.1.11----------------------------------
     static int abs(int a)
     {
-        if (a >= 0)
-        {
-            return a;
-        }
-        else
-        {
-            return int.Parse(a.ToString().Substring(1));
-        }
+        //if (a >= 0)
+        //{
+        //    return a;
+        //}
+        //else
+        //{
+        //    return int.Parse(a.ToString().Substring(1));
+        //}
+        return a > 0 ? a * -1 : -1;
     }
     static double abs(double a)
     {
@@ -172,15 +173,23 @@ internal class Program
     }
 
     //1.6.1.7-----------------------------------
-    static int CountOfRooms(int num, int count = 0)
-    {
-        if (num == 0)
-        {
-            return 0;
-        }
-        return count + 1 + CountOfRooms(num / 10);
-    }
+    //static int CountOfRooms(int num, int count = 0)
+    //{
+    //    if (num == 0)
+    //    {
+    //        return 0;
+    //    }
+    //    return count + 1 + CountOfRooms(num / 10);
+    //}
 
+    static int NLength(int n)
+    {
+        if(-9 <= n &&  n <= 9)
+        {
+            return 1;
+        }
+        return 1 + NLength(n / 10);
+    }
     //1.6.1.5-----------------------------------
     static int findMax(int num1, int num2, int num3)
     {

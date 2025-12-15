@@ -500,6 +500,7 @@ internal class Program
     //        return "";
     //    }
     //}
+    //yoki StartWith qisa boladi!!!!!!!!
 
     //1.4.1.15
     //static string lastTwo(string text)

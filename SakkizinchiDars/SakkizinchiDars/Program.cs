@@ -86,10 +86,17 @@ internal class Program
                 Console.WriteLine("tepadagilarni birini tanlang!");
                 goto firstif;
             }
-            //Console.ReadKey();
-            //Console.Clear();
         }
     }
+
+
+
+
+
+
+
+    //-----------------------Pasport Serie With CRUD-----------------------
+
     static bool CheckAll(string text)
     {
         if (CheckLength(text).Length <= 15 && CheckDigit(text).Length <= 15 && CheckLetter(text).Length <= 15)
@@ -148,6 +155,8 @@ internal class Program
     {
         IdSeries.Remove(seria);
     }
+    //-----------------------Pasport Serie With CRUD-----------------------
+
 
 
 

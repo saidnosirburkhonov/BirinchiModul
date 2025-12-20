@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Dars10
+﻿namespace Dars10
 {
     internal class students
     {

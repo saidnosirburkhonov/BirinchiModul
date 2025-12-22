@@ -11,7 +11,7 @@ internal class Program
         student1.gender = "Male";
         student1.country = "Moscow";
         student1.language = "russian";
-
+         
         students student2 = new students()
         {
             id = 2,
